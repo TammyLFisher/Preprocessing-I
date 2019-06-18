@@ -28,9 +28,11 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+
 }
 body {
 	line-height: 1;
+
 }
 ol, ul {
 	list-style: none;
@@ -50,11 +52,50 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
 	height: 100%;
-	background: wheat;
 }
+.container{
+	width: 95%;
+	background: lightgray;
+	header {
+		display: flex;
+		justify-content: flex-end;
+		nav {
+		border: 1px solid purple;
+		width: 70%;
+		display: flex;
+		justify-content: space-around;
+		font-size: 14px;
+		color: darkblue;
+		background-color: lightcyan;
+	}
+	.intro{
+		h1{
+			font-size: 24px;
+		}
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.address{
+		font-size: 12px
+	}
+}
+.headerimg{
+	height: @height*12;
+	width: @width*4;
+}
+
+}
+@color-base: royalblue;
+@width: 100px;
+@height: 20px;
+
+
+
+
 
