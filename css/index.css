@@ -184,10 +184,14 @@ body {
   font-weight: bold;
 }
 .container .content h5 h2 {
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 10px;
 }
 .container .content h5 p {
   font-size: 10px;
   font-weight: bolder;
+}
+.container .content h5 .skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
