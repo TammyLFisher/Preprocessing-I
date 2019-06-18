@@ -59,7 +59,7 @@ html, body {
 	height: 100%;
 }
 //variables
-@color-base: royalblue;
+@color-base: #b6bde3;
 @width: 100px;
 @height: 20px;
 @link-color: black;
@@ -67,8 +67,7 @@ html, body {
 //usage
 .container{
 	width: 80%;
-	background: lightgray;
-	header {
+		header {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
@@ -83,30 +82,37 @@ html, body {
 			.link {
 				color: @link-color;
 				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+					cursor: pointer;
+					color: @link-color-hover;
+					}
 			}
-		a:hover {
-			cursor: pointer;
-			color: @link-color-hover;
+		}	
+		.headerimg{
+			height: @height*12;
+			width: @width*4;
+		}
+		.content{
+			background: @color-base;
+			h1{
+				font-size: 50px;
 			}
-		
-    .intro {
-		h1 {
-			font-size: 40px;
+			h5{
+				width: 55%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				font-size: 12px;
+				#p1{
+					font-weight: bold;
+				}
+			}
 		}
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		.address {
-			font-size: 12px;
-		}
-	}
-}
-.headerimg{
-	height: @height*12;
-	width: @width*4;
+	
 }
 
-}
+
 
 
 
