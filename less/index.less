@@ -58,31 +58,47 @@ table {
 html, body {
 	height: 100%;
 }
+//variables
+@color-base: royalblue;
+@width: 100px;
+@height: 20px;
+@link-color: black;
+@link-color-hover:  purple;
+//usage
 .container{
-	width: 95%;
+	width: 80%;
 	background: lightgray;
 	header {
 		display: flex;
+		flex-direction: row;
 		justify-content: flex-end;
-		nav {
-		border: 1px solid purple;
-		width: 70%;
-		display: flex;
-		justify-content: space-around;
-		font-size: 14px;
-		color: darkblue;
-		background-color: lightcyan;
-	}
-	.intro{
-		h1{
-			font-size: 24px;
+		padding: 2rem;
+		nav{
+			display: flex;
+			justify-content: space-around;
+			width: 40%;
+			font-size: 14px;
+		}
+		a,
+			.link {
+				color: @link-color;
+				text-decoration: none;
+			}
+		a:hover {
+			cursor: pointer;
+			color: @link-color-hover;
+			}
+		
+    .intro {
+		h1 {
+			font-size: 40px;
 		}
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-	}
-	.address{
-		font-size: 12px
+		.address {
+			font-size: 12px;
+		}
 	}
 }
 .headerimg{
@@ -91,9 +107,6 @@ html, body {
 }
 
 }
-@color-base: royalblue;
-@width: 100px;
-@height: 20px;
 
 
 
