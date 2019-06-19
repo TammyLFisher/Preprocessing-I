@@ -142,6 +142,11 @@ html {
   line-height: 1.5;
   margin: 0 auto;
 }
+@media only screen and (max-width: 500px) {
+  .container {
+    background: lavender;
+  }
+}
 header,
 footer {
   display: flex;
@@ -155,6 +160,24 @@ footer nav {
   width: 40%;
   font-size: 14px;
 }
+@media only screen and (max-width: 900px) {
+  header nav,
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header nav,
+  footer nav {
+    display: flex;
+    height: 15%;
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
 header a,
 footer a {
   color: black;
@@ -166,9 +189,22 @@ footer a:hover {
   cursor: pointer;
   color: purple;
 }
+@media only screen and (max-width: 500px) {
+  header a:hover,
+  footer a:hover {
+    color: blue;
+  }
+}
 .headerimg {
   height: 240px;
   width: 400px;
+}
+@media only screen and (max-width: 500px) {
+  .headerimg {
+    align-content: center;
+    height: 20%;
+    width: 95%;
+  }
 }
 .content {
   background: #b6bde3;
@@ -182,12 +218,35 @@ footer a:hover {
   display: flex;
   justify-self: center;
 }
+@media only screen and (max-width: 800px) {
+  .content h1 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+}
 .content h5 {
   width: 55%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 800px) {
+  .content h5 {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .content h5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .content #p1 {
   font-weight: bold;
@@ -210,6 +269,12 @@ footer a:hover {
 .content .skills li {
   font-size: 1.2rem;
 }
+@media only screen and (max-width: 500px) {
+  .content .skills {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .history {
   display: flex;
   flex-direction: column;
@@ -221,6 +286,12 @@ footer a:hover {
   justify-content: space-between;
   font-size: 1.5rem;
   font-weight: bold;
+}
+@media only screen and (max-width: 900px) {
+  .date {
+    width: 100%;
+    font-size: 1rem;
+  }
 }
 .work-history {
   font-size: 1.2rem;
