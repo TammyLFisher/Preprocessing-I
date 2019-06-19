@@ -327,3 +327,59 @@ th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+label {
+  font-size: 1.6rem;
+}
+input[type=text],
+select {
+  width: 80%;
+  padding: 1.3rem;
+  margin: 0.8rem;
+  display: inline-block;
+  border: 3px solid #6b89c0;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+input[type=email],
+select {
+  width: 80%;
+  padding: 1.3rem;
+  margin: 0.8rem 4rem;
+  display: inline-block;
+  border: 3px solid #6b89c0;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+#textarea {
+  width: 80%;
+  height: 20rem;
+  padding: 1.3rem;
+  box-sizing: border-box;
+  border: 2px solid #6b89c0;
+  border-radius: 1rem;
+  resize: none;
+}
+input[type=submit] {
+  width: 20%;
+  background-color: purple ;
+  padding: 1.4rem;
+  margin: 1rem 3rem;
+  border: 2px solid purple;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #b6bde3;
+}
+@media screen and (max-width: 500px) {
+  .contact {
+    border-radius: 1rem;
+    background-color: lavender;
+    padding: 2rem;
+  }
+}
