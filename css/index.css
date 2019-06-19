@@ -258,7 +258,8 @@ footer a:hover {
 .content p {
   font-size: 1.2rem;
 }
-.content .skills {
+.content .skills,
+.content .personal-interests {
   width: 80rem;
   padding: 1.5rem;
   margin-left: 1.5rem;
@@ -266,11 +267,13 @@ footer a:hover {
   flex-direction: row;
   justify-content: space-around;
 }
-.content .skills li {
+.content .skills li,
+.content .personal-interests li {
   font-size: 1.2rem;
 }
 @media only screen and (max-width: 500px) {
-  .content .skills {
+  .content .skills,
+  .content .personal-interests {
     display: flex;
     flex-direction: column;
   }
@@ -304,4 +307,23 @@ ul {
 h4 {
   font-size: 1.4rem;
   font-weight: bold;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
