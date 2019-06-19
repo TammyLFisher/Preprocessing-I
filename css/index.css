@@ -140,6 +140,7 @@ html {
 .container {
   width: 80%;
   line-height: 1.5;
+  margin: 0 auto;
 }
 header {
   display: flex;
@@ -205,21 +206,27 @@ header a:hover {
 .content .skills li {
   font-size: 1.2rem;
 }
-.content .skills .work-history {
+.history {
   display: flex;
   flex-direction: column;
-  font-size: 1.2rem;
-  padding: 5rem;
-  width: 5rem;
-  height: 4rem;
 }
-.content .skills .work-history .date {
+.date {
+  width: 35%;
   display: flex;
   flex-direction: row;
-  font-size: 2rem;
+  justify-content: space-between;
+  font-size: 1.5rem;
   font-weight: bold;
 }
-.content .skills .work-history ul {
+.work-history {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+ul {
   list-style-type: circle;
   list-style-position: inside;
+}
+h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
 }
